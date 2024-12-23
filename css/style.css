@@ -1,0 +1,283 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* ========> navbar =======> */
+.nav-link::before{
+    content: "";
+    position: absolute;
+    /*width: 100%;
+    */height: 2px;
+    bottom: -6px;
+    left: 0;
+    width: 0;
+    /*visibility: hidden;
+    */background-color: #fff;
+    transition: width .3s ease-in-out ;
+    -webkit-transition: width .3s ease-in-out ;
+    -moz-transition: width .3s ease-in-out ;
+    -ms-transition: width .3s ease-in-out ;
+    -o-transition: width .3s ease-in-out ;
+}
+.nav-item:hover ::before , .nav-item:active ::before{
+    width: 70%;
+}
+
+/* =====> header section ======> */
+header{
+    background-image: url(../img/hero-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.home-layer{
+    background-color: rgba(0, 0, 0,.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.typing::after{
+    content: " | ";
+    animation:typing ;
+    -webkit-animation:typing ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite ;
+}
+@keyframes typing{
+    0%{ content: " |";}
+    2%{ content: " D|";}
+    4%{ content: " De|";}
+    6%{ content: " Des|";}
+    8%{ content: " Desi|";}
+    10%{ content: " Desig|";}
+    12%{ content: " Design|";}
+    14%{ content: " Designe|";}
+    16%{ content: " Designer|";}
+    30%{content: " Designer|";}
+    32%{content: " Designe|";}
+    34%{content: " Design|";}
+    36%{content: " Desig|";}
+    38%{content: " Desi|";}
+    40%{content: " Des|";}
+    42%{content: " De|";}
+    44%{content: " D|";}
+    46%{content: " |";}
+    50%{content: " F|";}
+    52%{content: " Fr|";}
+    54%{content: " Fre|";}
+    56%{content: " Free|";}
+    58%{content: " Freel|";}
+    60%{content: " Freela|";}
+    62%{content: " Freelan|";}
+    64%{content: " Freelanc|";}
+    66%{content: " Freelance|";}
+    68%{content: " Freelancer|";}
+    78%{content: " Freelancer|";}
+    80%{content: " Freelance|";}
+    82%{content: " Freelanc|";}
+    84%{content: " Freelan|";}
+    86%{content: " Freela|";}
+    88%{content: " Freel|";}
+    90%{content: " Free|";}
+    92%{content: " Fre|";}
+    94%{content: " Fr|";}
+    96%{content: " F|";}
+    98%{content: " |";}
+}
+/* ========> About section =========> */
+.about{
+    padding-top: 4rem;
+    background-color: #F5F5F5 ;
+}
+.lead{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.title-left{
+    font-size: 2rem;
+}
+h5::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #0078ff;;
+    left: 0px;
+    bottom: 0px;
+}
+/* ===========> Services Section ==========> */
+#services{
+    background-color: #F5F5F5;
+}
+.fa-solid{
+    width: 100px;
+    height: 100px;
+    border: blue solid 7px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    align-content: center;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+.serve-header h2{
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.line-mf {
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+}
+.serve-item:hover .fa-solid , .social-media i:hover {
+background-color:#0078ff;
+border: #CDE1F8 solid 7px;
+color: white;
+}
+/* ============ counter section =============== */
+.counter{
+    background-image: url(../img/post-3.jpg);
+    background-position: center center;
+    background-size: cover ;
+ background-attachment: fixed;
+    padding: 8rem 0;
+}
+.counter-layer{
+    background-color: #0078ff;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+}
+.counter-item i{
+    border-color: #CDE1F8;
+    border-width: 10px;
+}
+.work-icon{
+    width: 40px;
+    height: 40px;
+    border: blue solid 2px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+img{
+    transition:transform .5s ;
+    -webkit-transition:transform .5s ;
+    -moz-transition:transform .5s ;
+    -ms-transition:transform .5s ;
+    -o-transition:transform .5s ;
+}
+.port:hover img{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+.title-box {
+    margin-bottom: 4rem;
+}
+.work-caption-p span span , .work-cation-icon i {
+    color: #0078ff;
+}
+/* ======= feddback section =========== */
+.feedback{
+    height: 80vh;
+    background-image: url(../img/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.layer-feadback{
+    background-color: rgba(0, 120, 255,.7);
+}
+.carousel-indicators [data-bs-target]
+{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.avatar{
+    width: 32px;
+    height: 32px;
+}
+.blog-title a , .post-auther a{ text-decoration: none; color: #1e1e1e; transition:all .5s ease-in-out ; -webkit-transition:all .5s ease-in-out ; -moz-transition:all .5s ease-in-out ; -ms-transition:all .5s ease-in-out ; -o-transition:all .5s ease-in-out ;
+}
+.blog-title a:hover ,.post-auther a:hover{
+    color: #2078F2;
+}
+.blog-footer{
+    border-top: solid 1px #CCCCCC;
+  
+}
+.blog-item{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#contact{
+    /* height: 80vh; */
+    background-image: url(../img/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.overlay-contact{
+    background-color: rgba(0, 120, 255,.7); ;
+}
+ h5::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color:#0078ff;
+    left: 0px;
+    bottom: -9px;
+} 
+.button{
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.fa-location{
+    border: none;
+}
+.fa-brands{
+    width: 40px;
+    height: 40px;
+    border: blue solid 3px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+.serve-item:hover .fa-solid , .social-media i:hover {
+    background-color:#0078ff;
+    border: #CDE1F8 solid 3px;
+    color: white;
+    }
+
